@@ -1,0 +1,13 @@
+button {
+  margin: 15px 0px 15px 40px;
+}
+
+section {
+  height: 75vh;
+  padding: 40px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}

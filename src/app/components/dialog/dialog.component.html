@@ -1,0 +1,41 @@
+<mat-dialog-content>
+  <header>
+    <h2>Insert new element</h2>
+  </header>
+  <p>
+    <mat-form-field>
+      <mat-label>Position</mat-label>
+      <input matInput name="position" [(ngModel)]="position" required />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput name="name" [(ngModel)]="name" required />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <mat-label>Weight</mat-label>
+      <input matInput name="weight" [(ngModel)]="weight" required />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <mat-label>Symbol</mat-label>
+      <input matInput name="symbol" [(ngModel)]="symbol" required />
+    </mat-form-field>
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button
+    mat-raised-button
+    color="accent"
+    type="submit"
+    [disabled]="isButtonDisabled()"
+    (click)="onSubmit()"
+  >
+    Submit
+  </button>
+  <button mat-raised-button color="warn" matDialogClose>Cancel</button>
+</mat-dialog-actions>

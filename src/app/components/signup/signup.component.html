@@ -1,0 +1,30 @@
+<h1>Sign up</h1>
+<form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="name" name="name" ngModel required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" ngModel required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput type="password" name="password" ngModel required />
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="warn"
+    type="submit"
+    [disabled]="!signUpForm.valid"
+  >
+    Sign up
+  </button>
+  <p>
+    Already have an account? <a routerLink="/signin"><strong>Sign in</strong></a>
+  </p>
+  <p>
+    <strong>Note:</strong> This is just an example app for demo purposes. The
+    information will be recorded in a database, please use dummy data.
+  </p>
+</form>

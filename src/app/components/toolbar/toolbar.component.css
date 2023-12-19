@@ -1,0 +1,7 @@
+mat-toolbar > span {
+  font-size: larger;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

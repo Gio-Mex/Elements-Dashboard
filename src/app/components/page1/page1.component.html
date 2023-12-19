@@ -1,0 +1,15 @@
+<div class="gallery">
+  <mat-card class="card" *ngFor="let element of elements">
+    <mat-card-header>
+      <mat-card-title>{{ element.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{ element.imgUrl }}" alt="Photo of element" />
+    <mat-card-content>
+      <p>
+        <li>Position: {{ element.position }}</li>
+        <li>Weight: {{ element.weight }}</li>
+        <li>Symbol: {{ element.symbol }}</li>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

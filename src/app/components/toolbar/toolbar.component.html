@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>Elements Dashboard</span>
+  <span class="example-spacer"></span>
+  <span *ngIf="isAuthenticated()" [ngStyle]="{ 'font-size': 'medium' }">
+    Logout
+  </span>
+  <button
+    *ngIf="isAuthenticated()"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with logout icon"
+    (click)="onLogaut()"
+  >
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>

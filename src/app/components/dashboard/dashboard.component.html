@@ -1,0 +1,23 @@
+<button mat-icon-button class="menuButton" (click)="sidenav.toggle()">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-sidenav-container class="sidenav-container" hasBackdrop="true">
+  <mat-sidenav #sidenav mode="over" fixedInViewport="fixed">
+    <mat-nav-list>
+      <mat-list-item role="listitem" routerLink="page1"
+        ><button mat-button (click)="sidenav.toggle()">
+          Dashboard
+        </button></mat-list-item
+      >
+      <mat-list-item role="listitem" routerLink="page2"
+        ><button mat-button (click)="sidenav.toggle()">
+          Table
+        </button></mat-list-item
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

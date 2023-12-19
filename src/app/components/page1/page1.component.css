@@ -1,0 +1,22 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 0 50px;
+  overflow: auto;
+}
+
+.card {
+  width: 250px;
+  margin: 20px;
+}
+
+mat-card-title {
+  font-size: larger;
+  margin-bottom: 15px;
+}
+
+mat-card img {
+  margin-bottom: 20px;
+}
